@@ -1,0 +1,22 @@
+.new-worker {
+    width: 50%;
+    margin: auto;
+}
+
+.new-worker input {
+    text-align: center;
+}
+
+.workers {
+    width: 75%;
+    margin: auto;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.workers tr,
+.workers th,
+.workers td {
+    border: 1px solid black;
+}
+
