@@ -8,15 +8,19 @@
 <body>
 <div class="new-worker">
     <input type="text" id="name" placeholder="Vasya">
-    <input type="text" id="rate" placeholder="Pupkin">
-    <input type="submit" value="Save">
+    <input type="text" id="rate" placeholder="Rate">
+    <select id="type">
+        <option value="hour">By hour</option>
+        <option value="fixed">Fixed</option>
+    </select>
+    <input type="submit" value="Save" id="submit">
 </div>
 
 <table class="workers">
     <tr>
         <th>Name</th>
         <th>Rate</th>
-        <th>Salary</th>
+        <th id="order-by-salary">Salary</th>
     </tr>
 </table>
 

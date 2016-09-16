@@ -2,7 +2,9 @@
  * Created by Yuliia_Hryhorieva on 9/15/2016.
  */
 var workersPersistence = function(){
-    var getWorkers = function(){
+    var data = [];
+
+    var mock = (function(){
         var w1 = {
             name: 'Base',
             rate: 15,
@@ -18,10 +20,19 @@ var workersPersistence = function(){
             rate: 22,
             type: 'fixed'
         };
-        return workers = [w1, w2, w3];
+        data.push(...[w1, w2, w3]);
+    })();
+
+    var addNewWorker = function(worker){
+        data.push(worker);
+        return worker;
+    };
+    var getWorkers = function(){
+        return data;
     };
     return {
-        getWorkers: getWorkers
+        getWorkers: getWorkers,
+        addNewWorker: addNewWorker
     };
 };
 
