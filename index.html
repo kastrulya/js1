@@ -17,15 +17,24 @@
 </div>
 
 <table class="workers">
-    <tr>
-        <th>Name</th>
-        <th>Rate</th>
-        <th id="order-by-salary">Salary</th>
-    </tr>
+    <!--<thead>-->
+        <!--<tr>-->
+            <!--<th>Name</th>-->
+            <!--<th>Rate</th>-->
+            <!--<th id="order-by-salary">Salary</th>-->
+        <!--</tr>-->
+    <!--</thead>-->
+    <!--<tbody></tbody>-->
 </table>
+
+<button class="change-view" id="standart-view">Standart view</button>
+<button class="change-view" id="id-name-salary-view">Show employee id, name and salary per month</button>
+<button class="change-view" id="name-salary-view">Show employee name and salary per month for 5 first employees</button>
+<button class="change-view" id="id-view">Show employee id for 3 last employees</button>
 
 <script src="https://cdn.polyfill.io/v1/polyfill.js?features=Element.prototype.append"></script>
 <script src="js/persistance.js"></script>
 <script src="js/workers.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
